@@ -2,6 +2,7 @@ package net.ybibibaz.precious_chickens;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.item.Item;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -12,10 +13,10 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.registries.RegistryObject;
+import org.slf4j.Logger;
 
 import net.ybibibaz.precious_chickens.item.PreciousChickensItems;
-
-import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(PreciousChickens.MODID)
@@ -48,13 +49,9 @@ public class PreciousChickens {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(PreciousChickensItems.GOLDEN_EGG);
-            event.accept(PreciousChickensItems.GLASS_EGG);
-            event.accept(PreciousChickensItems.COPPER_EGG);
-            event.accept(PreciousChickensItems.IRON_EGG);
-            event.accept(PreciousChickensItems.EMERALD_EGG);
-            event.accept(PreciousChickensItems.DIAMOND_EGG);
-            event.accept(PreciousChickensItems.LAPIS_LAZULI_EGG);
+            for(RegistryObject<Item> egg : PreciousChickensItems.EGGS) {
+                event.accept(egg);
+            }
         }
     }
 
