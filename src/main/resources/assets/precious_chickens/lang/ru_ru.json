@@ -1,3 +1,9 @@
 {
-    "item.precious_chickens.golden_egg": "Золотое яйцо"
+    "item.precious_chickens.copper_egg": "Медное яйцо",
+    "item.precious_chickens.diamond_egg": "Алмазное яйцо",
+    "item.precious_chickens.emerald_egg": "Изумрудное яйцо",
+    "item.precious_chickens.glass_egg": "Стеклянное яйцо",
+    "item.precious_chickens.golden_egg": "Золотое яйцо",
+    "item.precious_chickens.iron_egg": "Железное яйцо",
+    "item.precious_chickens.lapis_lazuli_egg": "Лазуритовое яйцо"
 }

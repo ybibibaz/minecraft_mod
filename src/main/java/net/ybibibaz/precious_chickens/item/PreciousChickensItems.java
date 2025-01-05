@@ -13,6 +13,18 @@ public class PreciousChickensItems {
 
     public static final RegistryObject<Item> GOLDEN_EGG = ITEMS.register(
         "golden_egg", () -> new Item(new Item.Properties().setId(ITEMS.key("golden_egg"))));
+    public static final RegistryObject<Item> GLASS_EGG = ITEMS.register(
+        "glass_egg", () -> new Item(new Item.Properties().setId(ITEMS.key("glass_egg"))));
+    public static final RegistryObject<Item> COPPER_EGG = ITEMS.register(
+        "copper_egg", () -> new Item(new Item.Properties().setId(ITEMS.key("copper_egg"))));
+    public static final RegistryObject<Item> IRON_EGG = ITEMS.register(
+        "iron_egg", () -> new Item(new Item.Properties().setId(ITEMS.key("iron_egg"))));
+    public static final RegistryObject<Item> EMERALD_EGG = ITEMS.register(
+        "emerald_egg", () -> new Item(new Item.Properties().setId(ITEMS.key("emerald_egg"))));
+    public static final RegistryObject<Item> DIAMOND_EGG = ITEMS.register(
+        "diamond_egg", () -> new Item(new Item.Properties().setId(ITEMS.key("diamond_egg"))));
+    public static final RegistryObject<Item> LAPIS_LAZULI_EGG = ITEMS.register(
+        "lapis_lazuli_egg", () -> new Item(new Item.Properties().setId(ITEMS.key("lapis_lazuli_egg"))));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

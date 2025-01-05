@@ -49,6 +49,12 @@ public class PreciousChickens {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(PreciousChickensItems.GOLDEN_EGG);
+            event.accept(PreciousChickensItems.GLASS_EGG);
+            event.accept(PreciousChickensItems.COPPER_EGG);
+            event.accept(PreciousChickensItems.IRON_EGG);
+            event.accept(PreciousChickensItems.EMERALD_EGG);
+            event.accept(PreciousChickensItems.DIAMOND_EGG);
+            event.accept(PreciousChickensItems.LAPIS_LAZULI_EGG);
         }
     }
 

@@ -1,3 +1,9 @@
 {
-    "item.precious_chickens.golden_egg": "Golden egg"
+    "item.precious_chickens.copper_egg": "Copper Egg",
+    "item.precious_chickens.diamond_egg": "Diamond Egg",
+    "item.precious_chickens.emerald_egg": "Emerald Egg",
+    "item.precious_chickens.glass_egg": "Glass Egg",
+    "item.precious_chickens.golden_egg": "Golden Egg",
+    "item.precious_chickens.iron_egg": "Iron Egg",
+    "item.precious_chickens.lapis_lazuli_egg": "Lapis Lazuli Egg"
 }
